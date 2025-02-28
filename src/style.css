@@ -1,0 +1,120 @@
+                      #map { position:absolute; top:0; bottom:0; width:100%; }
+
+
+ #menumap {
+            position: absolute;
+            top: 10px;
+            left: 50px;
+            background: white;
+            padding: 10px;
+            z-index: 1000;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+/* Style général des popups */
+.popup-content {
+    font-family: 'Georgia', serif; /* Police évoquant un style classique */
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/29/04/19/ocean-1867285_1280.jpg'); /* Remplacez par l'URL de votre image */
+    background-size: cover; /* L'image couvre toute la popup */
+    background-position: center center; /* Centrer l'image */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Ombre douce pour un effet classique */
+    max-width: 280px;
+    border: 2px solid #d4af37; /* Bordure dorée pour l'élégance */
+    color: #ffffff; /* Texte en blanc pour contraster avec l'image de fond */
+}
+
+/* Style pour le titre */
+.popup-title {
+    margin: 0;
+    font-size: 18px;
+    color: #003366; /* Bleu foncé, rappelant la couleur des colonnes grecques */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px; /* Espacement pour un effet plus solennel */
+    border-bottom: 2px solid #d4af37; /* Bordure dorée sous le titre */
+    padding-bottom: 5px;
+}
+
+/* Ligne de séparation */
+.popup-hr {
+    border: none;
+    border-top: 2px solid #d4af37; /* Doré pour la séparation */
+    margin: 10px 0;
+}
+
+/* Texte des informations supplémentaires */
+.popup-text {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #ffffff; /* Texte en blanc pour une meilleure lisibilité */
+    line-height: 1.6;
+}
+
+/* Style pour le sous-texte (places disponibles) */
+.popup-subtext {
+    margin: 12px 0;
+    font-size: 16px;
+    color: #ffffff; /* Texte blanc */
+    line-height: 1.5;
+}
+
+/* Style des popups des stations VLS */
+.popup-title {
+    font-size: 18px;
+    color: #003366; /* Bleu foncé pour le titre */
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 5px;
+}
+
+/* Style spécifique pour les places de vélos et emplacements */
+.popup-text strong {
+    color: #d4af37; /* Doré pour mettre en valeur les informations clés */
+    font-weight: bold;
+}
+
+/* Style général pour les icônes et symboles */
+.popup-text svg {
+    width: 20px;
+    height: 20px;
+    fill: #003366; /* Bleu pour les icônes */
+    margin-right: 5px;
+}
+
+
+
+
+.menu {
+            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            position: absolute;
+            width: 200px;
+            top: 15%;
+            left: 50px;
+            padding: 10px;
+        }
+
+.menu .menu_overlay {
+            background-color: #fff;
+            box-shadow:0 1px 2px rgba(0, 0, 0, 0.10);
+            border-radius: 3px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+.menu_overlay fieldset {
+            border: none;
+            padding: 0;
+            margin: 0 0 10px;
+        }
+
+.menu_overlay .categoryLabel {
+            display: block;
+            font-weight: bold;
+            margin: 0 0 5px;
+        }

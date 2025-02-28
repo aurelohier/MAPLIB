@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+    <title>MapboxGL</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+  
+  
+  <script src="https://unpkg.com/maplibre-gl@^5.1.1/dist/maplibre-gl.js"></script>
+<link href="https://unpkg.com/maplibre-gl@^5.1.1/dist/maplibre-gl.css" rel="stylesheet" />
+  
+</head>
+<body>
+  
+  
+
+ <div id="menumap">
+    <label for="style-selector">Choisir un fond de carte :</label>
+    <select id="style-selector">
+      <option value="mapbox://styles/aurel-oh/cm74s74fl007x01r003ur9rfx"> MONMAPBOX</option> 
+      <option value="https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetCapabilities">Streets</option>
+        <option value="https://openmaptiles.geo.data.gouv.fr/styles/positron/style.json">Positron</option>
+        <option value="https://geoserveis.icgc.cat/contextmaps/icgc_orto_estandard.json">Light</option>
+        <option value="https://viglino.github.io/geoservice-style/coffee/coffee.json">Cafe</option>
+        <option value="https://openmaptiles.geo.data.gouv.fr/styles/osm-bright/style.json">DATAGOUV</option>
+        
+    </select>
+   
+  <div>
+
+<button id='Gare'>Quartier Gare-Centre</button>
+<button id='Rennes2'>Université Rennes 2</button>
+
+</div> 
+   
+</div>  
+  
+  <iframe width='100%' height='400px' src= title="Streets" style="border:none;"></iframe>
+  
+
+  
+  
+    <div id='map'></div>
+  
+
+<div class='menu'>
+    <div class='menu_overlay'>
+
+<hr>
+   <fieldset>
+   <label class="categoryLabel">Données Réferentielles</label>
+   
+     <div>
+      <input type="checkbox" id="RoutesCB" value="Routes" onchange="switchlayer('Routes')" checked/>
+                <label for="RoutesCB">Routes</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="hydrologieCB" value="hydrologie" onchange="switchlayer('hydrologie')" checked/>
+                <label for="HydrologieCB">hydrologie</label>
+            </div>
+        </fieldset>
+      
+      <hr>
+      
+        <fieldset>
+            <label class="categoryLabel">Données métier</label>
+            <div>
+                <input type="checkbox" id="ArretsCB" value="Arrets" onchange="switchlayer('Arrets')" />
+                <label for="ArretsCB">Arret de Bus</label>
+            </div>
+            <div>
+                <input type="checkbox" id="batimentsCB" value="batiments" onchange="switchlayer('batiments')" />
+                <label for="batimentsCB">Bâtiment</label>
+            </div>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <label class="categoryLabel">Autres</label>
+            <div>
+                <input type="checkbox" id="ContourcommuneCB" value="Contourcommune" onchange="switchlayer('Contourcommune')" />
+                <label for="ContourcommuneCB">Contour</label>
+            </div>
+        </fieldset>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
